@@ -8,7 +8,7 @@ body{
     font-family:verdana, 'Courier New', Courier, monospace;
 }
 header{
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
     max-height: 70px;
     height: 50px;
     position: fixed;
@@ -19,6 +19,8 @@ header #head{
     justify-content: center;
     align-items: center;
     height: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
     
 }
 header #head > section:nth-child(1){
@@ -51,6 +53,10 @@ header #head > section:nth-child(3){
 
     justify-content: flex-start;
     align-items: center;
+}
+.logo img{
+    height: inherit;
+    width: 150px;
 }
 
 #search form{
